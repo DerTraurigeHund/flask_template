@@ -1,0 +1,89 @@
+.light-theme {
+    --primary-color: #ececec;
+    --secondary-color: #d3d3d3;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --selected-color: #005dc0;
+    --extra-color: #9e9e9e;
+    --extra-color-hover: #bdbdbd;
+}
+
+.dark-theme {
+    --primary-color: #25272b;
+    --secondary-color: #18191d;
+    --background-color: #101014;
+    --text-color: #ffffff;
+    --selected-color: #007bff;
+    --extra-color: #46474e;
+    --extra-color-hover: #303038;
+}
+
+.blue-theme {
+    --primary-color: #191b31;
+    --secondary-color: #262b47;
+    --background-color: #1e213f;
+    --text-color: #ffffff;
+    --selected-color: #007bff;
+    --extra-color: #172155;
+    --extra-color-hover: #1d2b6d;
+}
+
+.hacker-theme {
+    --primary-color: #090a09;
+    --secondary-color: #010201;
+    --background-color: #000000;
+    --text-color: #15ff00;
+    --selected-color: #ffae00;
+    --extra-color: #530c0c;
+    --extra-color-hover: #ff0000;
+}
+
+.orange-theme {
+    --primary-color: #ff5e00;
+    --secondary-color: #c55500;
+    --background-color: #8a3900;
+    --text-color: #362911;
+    --selected-color: #ffa602;
+    --extra-color: #fc782c;
+    --extra-color-hover: #ff8c20;
+}
+
+.red-theme {
+    --primary-color: #5c0a0a;
+    --secondary-color: #7a1c1c;
+    --background-color: #4e0a0a;
+    --text-color: #ffffff;
+    --selected-color: #ff0000;
+    --extra-color: #8b0000;
+    --extra-color-hover: #a30000;
+}
+
+.yellow-theme {
+    --primary-color: #ffd700;
+    --secondary-color: #ffeb3b;
+    --background-color: #fffacd;
+    --text-color: #000000;
+    --selected-color: #a78b1b;
+    --extra-color: #d6b600;
+    --extra-color-hover: #a88f00;
+}
+
+.rainbow-theme {
+    --primary-color: #ff0000;
+    --secondary-color: #ff7f00;
+    --background-color: #ffff00;
+    --text-color: #00ff00;
+    --selected-color: #0000ff;
+    --extra-color: #4b0082;
+    --extra-color-hover: #8b00ff;
+}
+
+.green-theme {
+    --primary-color: #0b3d0b;
+    --secondary-color: #145214;
+    --background-color: #0f4d0f;
+    --text-color: #ffffff;
+    --selected-color: #00a000;
+    --extra-color: #0b5f0b;
+    --extra-color-hover: #117711;
+}
