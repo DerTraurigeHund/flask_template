@@ -20,7 +20,8 @@
     "other": {
         "/static/<path:path>": {
             "name": "static files",
-            "description": "static files"
+            "description": "static files",
+            "function": "server.functions.other.static"
         }
     },
 
@@ -28,6 +29,7 @@
         "session": {
             "name": "Session Socket",
             "description": "Session Socket",
+            "function": "server.functions.socket.session"
         }
     }
 }
