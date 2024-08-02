@@ -1,0 +1,33 @@
+{
+    "html": {
+        "/": {
+            "name": "Home",
+            "description": "Home page",
+            "file": "index.html",
+            "daynamic": [false, "function if true"],
+            "required_permissions": []
+        }
+    },
+
+    "api": {
+        "/login": {
+            "name": "Login API",
+            "description": "Login API",
+            "function": "server.functions.api.login"
+        }
+    },
+
+    "other": {
+        "/static/<path:path>": {
+            "name": "static files",
+            "description": "static files"
+        }
+    },
+
+    "socket": {
+        "session": {
+            "name": "Session Socket",
+            "description": "Session Socket",
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "flask_template",
+    "version": "0.0.1",
+    "description": "Flask template",
+    "scripts": {
+        "start": "{PYTHON} main.py -start -port={PORT} -host={HOST} -debug={DEBUG}",
+        "restart": "{PYTHON} main.py -restart -port={PORT} -host={HOST} -debug={DEBUG}",
+        "stop": "{PYTHON} main.py -stop -port={PORT} -host={HOST} -debug={DEBUG}"
+    },
+    "config_files": {
+        "server": {
+            "name": "server config",
+            "description": "server config",
+            "path": "./config/server.json"
+        },
+        "mysql": {
+            "name": "mysql config",
+            "description": "mysql config",
+            "path": "./config/mysql.json"
+        }
+    }
+}
