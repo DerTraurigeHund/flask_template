@@ -31,15 +31,5 @@ def load_routs(app, socketio):
                 except Exception as e:
                     print(RED + f'Socket {name} not loaded: {str(e)}' + RESET)
         elif route == 'html':
-            for html in routes[route]:
-                try:
-                    name = routes[route][html]['name']
-                    description = routes[route][html]['description']
-                    file = routes[route][html]['file']
-                    premission = routes[route][html]['required_permissions']
-                    dynamic = routes[route][html]['daynamic']
-
-                    if dynamic == [False]:
-                        @app.route(html)
-                        def {html}():
-
+            continue
+        
