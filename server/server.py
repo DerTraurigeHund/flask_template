@@ -10,6 +10,7 @@ from .routs import load_routs
 app = flask.Flask(__name__)
 socketio = flask_socketio.SocketIO(app)
 app.secret_key = os.urandom(24)
+app.template_folder = 'client/html'
 
 def start_server(port=5000, host='127.0.0.1', debug=False):
     load_routs(app, socketio)
