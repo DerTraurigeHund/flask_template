@@ -1,0 +1,17 @@
+{
+    "admin": {
+        "delete_user": {
+            "name": "Delete user",
+            "description": "Delete user",
+            "required_permissions": ["admin.delete_user"]
+        },
+
+        "delete_group": {
+            "{VALUE}": {
+                "name": "Delete group",
+                "description": "Delete group",
+                "required_permissions": ["admin.delete_group"]
+            }
+        }
+    }
+}

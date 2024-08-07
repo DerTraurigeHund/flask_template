@@ -5,6 +5,13 @@
             "description": "Home page",
             "file": "index.html",
             "daynamic": [false, "function if true"],
+            "required_permissions": ["group.user", "admin.delete_user"]
+        },
+        "/custom": {
+            "name": "Custom",
+            "description": "Custom page",
+            "file": "custom.html",
+            "daynamic": [true, "server.routs.daynamic.custom"],
             "required_permissions": []
         }
     },
@@ -13,7 +20,7 @@
         "/login": {
             "name": "Login API",
             "description": "Login API",
-            "function": "server.functions.api.login"
+            "function": "server.routs.api.login"
         }
     },
 
@@ -21,7 +28,7 @@
         "/static/<path:path>": {
             "name": "static files",
             "description": "static files",
-            "function": "server.functions.other.static"
+            "function": "server.routs.other.static"
         }
     },
 
@@ -29,7 +36,7 @@
         "session": {
             "name": "Session Socket",
             "description": "Session Socket",
-            "function": "server.functions.socket.session"
+            "function": "server.routs.socket.session"
         }
     }
 }

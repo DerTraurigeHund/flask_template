@@ -1,0 +1,14 @@
+{
+    "admin": {
+        "name": "Admin",
+        "description": "Admin permissions",
+        "group_permissions": ["user"],
+        "permissions": ["-admin.delete_user"]
+    },
+    "user": {
+        "name": "User",
+        "description": "User permissions",
+        "group_permissions": [],
+        "permissions": ["admin.delete_user"]
+    }
+}
