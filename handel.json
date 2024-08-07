@@ -3,9 +3,10 @@
     "version": "0.0.1",
     "description": "Flask template",
     "scripts": {
-        "start": "{PYTHON} main.py -start -port={PORT} -host={HOST} -debug={DEBUG}",
-        "restart": "{PYTHON} main.py -restart -port={PORT} -host={HOST} -debug={DEBUG}",
-        "stop": "{PYTHON} main.py -stop -port={PORT} -host={HOST} -debug={DEBUG}"
+        "start": "gunicorn -k eventlet -w {WORKERS} -b {HOST}:{PORT} server:app",
+        "restart": "kill -9 `lsof -t -i:{PORT}` && gunicorn -k eventlet -w {WORKERS} -b {HOST}:{PORT} server:app",
+        "stop": "kill -15 `lsof -t -i:{PORT}`",
+        "kill": "kill -9 `lsof -t -i:{PORT}`"
     },
     "config_files": {
         "server": {

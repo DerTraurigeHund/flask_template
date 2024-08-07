@@ -9,12 +9,12 @@ from .routs import load_routs
 
 app = flask.Flask(__name__)
 socketio = flask_socketio.SocketIO(app)
-app.secret_key = os.urandom(24)
+app.secret_key = "this is a super secret key"
 app.template_folder = 'client/html'
 
-def start_server(port=5000, host='127.0.0.1', debug=False):
+def start_server():
     load_routs(app, socketio)
-    app.run(port=port, host=host, debug=debug)
+    socketio.run()
 
 
 def stop_server():
