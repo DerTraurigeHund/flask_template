@@ -14,7 +14,7 @@ app.template_folder = 'client/html'
 
 def start_server():
     load_routs(app, socketio)
-    socketio.run()
+    socketio.run(app=app)
 
 
 def stop_server():
